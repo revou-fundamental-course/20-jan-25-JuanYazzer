@@ -1,0 +1,45 @@
+body{
+    margin: 0 3rem 0 3rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #232830;
+    color: aliceblue;
+}
+header{
+    text-align: center;
+}
+
+article{
+    margin: 0.5rem 0 0.5rem 0;
+}
+
+form{
+    color: black;
+    border: black 1px solid;
+    border-radius: 10px;
+    padding: 0.5rem;
+    background-color: aliceblue;
+}
+
+form div{
+    padding: 0.5rem;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+}
+
+.result{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: black;
+    border: black 1px solid;
+    border-radius: 10px;
+    padding: 0.5rem;
+    background-color: aliceblue;
+}
+.result h3{
+    margin-top: 0;
+}

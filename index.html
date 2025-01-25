@@ -17,7 +17,7 @@
     </article>
     <!-- form/inputan -->
     <form>
-        <div class="form-group">
+        <div>
             <label for="jenisKelamin">Jenis Kelamin</label>
             <input type="radio" id="cowo" value="cowo">
             <label for="cowo">cowo</label>
@@ -25,8 +25,8 @@
             <label for="cewe">cewe</label>
         </div>
         <div class="form-group">
-            <label for="beratBedan">Berat Badan (Kg)</label>
-            <input id="beratBedan" type="number">
+            <label for="beratBadan">Berat Badan (Kg)</label>
+            <input id="beratBadan" type="number">
         </div>
         <div class="form-group">
             <label for="usia">Usia (Tahun)</label>
@@ -36,20 +36,19 @@
             <label for="tinggiBadan">Tinggi Badan (cm)</label>
             <input id="tinggiBadan" type="number">
         </div>
-        <div class="sub/res">
+        <div>
             <button>Hitung</button>
-            <button>Reset</button>
         </div>
     </form>
     <!-- Article Kegunaan -->
-     <!-- Bisa membesar kebawah  -->
+     <!-- Bisa membesar kebawah / Collapsible  -->
     <article>
-        <Div class="information">
-            <h3>Apa itu BMI?</h3>
+        <details name="information">
+            <summary>Apa itu BMI?</summary>
             <p>Body Mass Index (BMI) adalah cara menghitung berat badan ideal berdasarkan tinggi dan berat badan. BMI juga dapat dibedakan berdasarkan usia.</p>
-        </Div>
-        <Div class="information">
-            <h3>Apa itu Kalkulator BMI?</h3>
+        </details>
+        <details name="information">
+            <summary>Apa itu Kalkulator BMI?</summary>
             <p>Kalkulator BMI adalah alat untuk mengidentifikasi apakah berat badan kamu termasuk dalam 
                 kategori ideal atau tidak. Kalkulator ini dapat digunakan oleh seseorang yang berusia 20 tahun ke atas.
                 Perlu diingat bahwa Kalkulator BMI ini tidak dapat diaplikasikan untuk ibu hamil dan anak-anak karena 
@@ -61,9 +60,35 @@
                 <li>Jika angka BMI berada di bawah 18.5, maka kamu memiliki berat badan rendah</li>
                 <li>Jika angka BMI sudah melebihi angka 25, sebaiknya segera dilakukan penanganan untuk mencegah timbulnya penyakit</li>
             </ul>
-        </Div>
-     </article>
+        </details>
+        <details name="information">
+            <summary>Apa kegunaan Kalkulator BMI?</summary>
+            <p>Kalkulator BMI adalah alat untuk mengidentifikasi apakah berat badan kamu termasuk dalam 
+                kategori ideal atau tidak. Kalkulator ini dapat digunakan oleh seseorang yang berusia 20 tahun ke atas.
+                Perlu diingat bahwa Kalkulator BMI ini tidak dapat diaplikasikan untuk ibu hamil dan anak-anak karena 
+                standar BMI yang berbeda.</p>
+            <p>Hal yang perlu diperhatikan pada Kalkulator BMI:</p>
+            <ul>
+                <li>BMI Normal berada pada kisaran 18.5-24.9</li>
+                <li>Jika angka BMI melebihi 25, maka kamu memiliki berat badan berlebih</li>
+                <li>Jika angka BMI berada di bawah 18.5, maka kamu memiliki berat badan rendah</li>
+                <li>Jika angka BMI sudah melebihi angka 25, sebaiknya segera dilakukan penanganan untuk mencegah timbulnya penyakit</li>
+            </ul>
+        </details>
+    </article>
      <!-- Hasil masih satu page dibawah atau di samping? -->
-    
+    <section class="result">
+        <h3>Hasil</h3>
+        <section>
+            <span>Keterangan</span>
+            <p>0</p>
+            <span>Semangat turunin berat badannya!!</span>
+        </section>
+    </section>
+    <section>
+        <p>hasil anntara a....</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quam nam unde odit quibusdam alias! Possimus sapiente, nisi, quo, illo odit suscipit ratione quae perspiciatis labore modi praesentium incidunt aspernatur.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quisquam, dolore deleniti repudiandae quam temporibus rerum? Fugiat corrupti accusamus suscipit ab ullam unde laudantium dicta optio. Non quibusdam sit obcaecati!</p>
+    </section>
     </body>
 </html>
