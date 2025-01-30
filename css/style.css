@@ -4,20 +4,24 @@ body{
     flex-direction: column;
     background-color: #232830;
     color: aliceblue;
+    font-family: 'Arial', sans-serif;
 }
 header{
     text-align: center;
+    margin-top: 1rem;
+    font-family: 'Verdana', sans-serif;
 }
 
 article{
     margin: 0.5rem 0 0.5rem 0;
+    font-size: 1.1rem;
 }
 
 form{
     color: black;
     border: black 1px solid;
     border-radius: 10px;
-    padding: 0.5rem;
+    padding: 1.5rem;
     background-color: aliceblue;
 }
 
@@ -28,8 +32,41 @@ form div{
 .form-group{
     display: flex;
     flex-direction: column;
+    margin-bottom: 1rem;
 }
 
+label{
+    margin-bottom: 0.3rem;
+    font-weight: bold;
+}
+
+input[type="number"]{
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+}
+
+input[type="number"]:focus{
+    border-color: #4a90e2;
+}
+
+button{
+    background-color: #4a90e2;
+    color: #fff;
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-right: 0.5rem;
+    transition: background-color 0.3s;
+}
+
+button:hover{
+    background-color: #357ab7;
+}
 .result{
     display: flex;
     flex-direction: column;
@@ -42,4 +79,13 @@ form div{
 }
 .result h3{
     margin-top: 0;
+}
+
+.result{
+    display: none;
+}
+
+form, .result {
+    max-width: 400px;
+    margin: auto;
 }

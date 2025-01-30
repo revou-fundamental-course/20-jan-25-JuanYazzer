@@ -18,26 +18,29 @@
     <!-- form/inputan -->
     <form>
         <div>
-            <label for="jenisKelamin">Jenis Kelamin</label>
-            <input type="radio" id="cowo" value="cowo">
-            <label for="cowo">cowo</label>
-            <input type="radio" id="cewe" value="cewe">
-            <label for="cewe">cewe</label>
-        </div>
+            <label>Jenis Kelamin</label>
+            <div>
+                <input type="radio" id="cowo" name="jenisKelamin" value="cowo">
+                <label for="cowo">Cowo</label>
+                <input type="radio" id="cewe" name="jenisKelamin" value="cewe">
+                <label for="cewe">Cewe</label>
+            </div>
+        </div>        
         <div class="form-group">
             <label for="beratBadan">Berat Badan (Kg)</label>
-            <input id="beratBadan" type="number">
+            <input id="beratBadan" type="number" required>
         </div>
         <div class="form-group">
             <label for="usia">Usia (Tahun)</label>
-            <input id="usia" type="number">
+            <input id="usia" type="number" required>
         </div>
         <div class="form-group">
             <label for="tinggiBadan">Tinggi Badan (cm)</label>
-            <input id="tinggiBadan" type="number">
+            <input id="tinggiBadan" type="number" required>
         </div>
         <div>
-            <button>Hitung</button>
+            <button onclick="hitungBMI()" type="button">Hitung</button>
+            <button onclick="resetForm()" type="reset">Reset</button>
         </div>
     </form>
     <!-- Article Kegunaan -->
@@ -64,8 +67,7 @@
         <details name="information">
             <summary>Apa kegunaan Kalkulator BMI?</summary>
             <p>Kalkulator BMI adalah alat untuk mengidentifikasi apakah berat badan kamu termasuk dalam 
-                kategori ideal atau tidak. Kalkulator ini dapat digunakan oleh seseorang yang berusia 20 tahun ke atas.
-                Perlu diingat bahwa Kalkulator BMI ini tidak dapat diaplikasikan untuk ibu hamil dan anak-anak karena 
+                kategori ideal atau tidak.Perlu diingat bahwa Kalkulator BMI ini tidak dapat diaplikasikan untuk ibu hamil dan anak-anak karena 
                 standar BMI yang berbeda.</p>
             <p>Hal yang perlu diperhatikan pada Kalkulator BMI:</p>
             <ul>
@@ -80,15 +82,11 @@
     <section class="result">
         <h3>Hasil</h3>
         <section>
-            <span>Keterangan</span>
-            <p>0</p>
-            <span>Semangat turunin berat badannya!!</span>
+            <span id="kategori">Keterangan</span>
+            <p id="hasil">0</p>
+            <span id="penyemangat">if dll</span>
         </section>
     </section>
-    <section>
-        <p>hasil anntara a....</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quam nam unde odit quibusdam alias! Possimus sapiente, nisi, quo, illo odit suscipit ratione quae perspiciatis labore modi praesentium incidunt aspernatur.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quisquam, dolore deleniti repudiandae quam temporibus rerum? Fugiat corrupti accusamus suscipit ab ullam unde laudantium dicta optio. Non quibusdam sit obcaecati!</p>
-    </section>
     </body>
+    <script src="js/script.js"></script>
 </html>
